@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/ttn-core" mode="merge"/>
+    <filter root="/content/ttn-core" mode="merge"/>
+    <filter root="/content/dam/ttn-core/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/ttn-core" mode="merge"/>
+</workspaceFilter>
