@@ -1,6 +1,6 @@
-# Sample AEM project template
+# AEM Core Project
 
-This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
+This is a project for AEM-based application.
 
 ## Modules
 
@@ -24,23 +24,23 @@ To build all the modules run in the project root directory the following command
 
 To build all the modules and deploy the `all` package to a local instance of AEM, run in the project root directory the following command:
 
-    mvn clean install -PautoInstallSinglePackage
+    mvn clean install -PautoInstallSinglePackage,adobe-public
 
 Or to deploy it to a publish instance, run
 
-    mvn clean install -PautoInstallSinglePackagePublish
+    mvn clean install -PautoInstallSinglePackagePublish,adobe-public
 
 Or alternatively
 
-    mvn clean install -PautoInstallSinglePackage -Daem.port=4503
+    mvn clean install -PautoInstallSinglePackage,adobe-public -Daem.port=4503
 
 Or to deploy only the bundle to the author, run
 
-    mvn clean install -PautoInstallBundle
+    mvn clean install -PautoInstallBundle,adobe-public
 
 Or to deploy only a single content package, run in the sub-module directory (i.e `ui.apps`)
 
-    mvn clean install -PautoInstallPackage
+    mvn clean install -PautoInstallPackage,adobe-public
 
 ## Testing
 
