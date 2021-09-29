@@ -77,6 +77,12 @@
                             <type>zip</type>
                             <target>/apps/ttn-core-packages/application/install</target>
                         </embedded>
+                        <!-- Embedding additional bundles -->
+                        <embedded>
+                            <groupId>net.sf.ehcache</groupId>
+                            <artifactId>ehcache</artifactId>
+                            <target>/apps/ttn-core-packages/third-party/install</target>
+                        </embedded>
                     </embeddeds>
                 </configuration>
             </plugin>
